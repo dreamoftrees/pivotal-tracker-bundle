@@ -1,0 +1,14 @@
+parameters:
+    pivotaltracker_api_token:
+    pivotaltracker_project_id:
+
+services:
+    dreamoftrees_pivotal_tracker.pivotaltracker:
+        class: Dreamoftrees\PivotalTrackerBundle\Services\PivotalTrackerService
+        arguments: [%pivotaltracker_api_token%,%pivotaltracker_project_id%,%dreamoftrees_pivotal_tracker.epics%,%dreamoftrees_pivotal_tracker.states%,@logger]
+
+    dreamoftrees_pivotal_tracker.twig.extension:
+        class: Dreamoftrees\PivotalTrackerBundle\Twig\Extension\DreamoftreesPivotalTrackerExtension
+        arguments: [@dreamoftrees_pivotal_tracker.pivotaltracker]
+        tags:
+            - { name: twig.extension }
