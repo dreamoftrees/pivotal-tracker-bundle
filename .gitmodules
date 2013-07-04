@@ -1,3 +1,0 @@
-[submodule "Lib/pivotal"]
-	path = Lib/pivotal
-	url = https://github.com/codazoda/PHP-Pivotal-Tracker-Class.git
