@@ -77,8 +77,8 @@ class PivotalTrackerService extends \pivotal {
     public function getEpics()
     {
         $data = $this->getData('stories');
-        $epic_states = [];
-        $formatted = [];
+        $epic_states = array();
+        $formatted = array();
         foreach( $this->epics as $epic ) {
             $epic_state = array();
             $formatted[] = array('label' => $epic['title'], 'states'=>$epic_state, 'labels'=>$epic['label'], 'total'=>0);
@@ -126,7 +126,7 @@ class PivotalTrackerService extends \pivotal {
      */
     public function getStoryStates()
     {
-        $states = [];
+        $states = array();
         $data = $this->getData('stories');
         $total = (int) $data->attributes()->total;
 
@@ -142,7 +142,7 @@ class PivotalTrackerService extends \pivotal {
         }
 
         // Compile into label/value format
-        $formatted = [];
+        $formatted = array();
         foreach( $states as $state_name => $state_count ) {
             $state = $this->getState( $state_name );
             $formatted[] = array('label' => $state["label"], 'value'=> $state_count, 'color'=> $state['color'], 'state' => $state_name);
