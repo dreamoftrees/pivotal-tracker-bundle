@@ -51,7 +51,7 @@ class PivotalTrackerService extends \pivotal {
 
     public function getActivity()
     {
-        $activity = [];
+        $activity = array();
         $data = $this->getData('activity');
         //$this->logger->info('activity: '.json_encode($data));
 
