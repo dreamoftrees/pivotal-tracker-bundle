@@ -1,7 +1,7 @@
-PivotalTrackerBundle
+Pivotal Tracker Bundle
 ====================
 
-Pivotal Tracker wrapper bundle for Symfony 2.
+Pivotal Tracker API wrapper bundle for Symfony 2.
 
 
 Installation
@@ -58,7 +58,7 @@ You can also define extra information for Pivotal Tracker states in the configur
                         - {state: "started", label: "started", color: "#f1c359" }
                         - {state: "unscheduled", label: "unscheduled", color: "#c4dafe" }
                         - {state: "unstarted", label: "pending", color: "#30a1ec" }
-                        
+
 
 
 Charting
