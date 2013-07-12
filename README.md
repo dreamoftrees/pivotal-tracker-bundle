@@ -27,7 +27,7 @@ Make sure you register the bundle in the app/AppKernal.php of your Symfony 2 pro
 
 You will also need to register the PHP Pivotal Tracker class in app/autoload.php, I know there must be a nicer way to register this class..
 '''
-require_once __DIR__.'/../src/Dreamoftrees/PivotalTrackerBundle/Lib/PivotalTracker/pivotal.php';
+require_once __DIR__.'/../vendor/Dreamoftrees/PivotalTrackerBundle/Lib/PivotalTracker/pivotal.php';
 '''
 
 
@@ -73,8 +73,9 @@ With a little imagination you can use Twitter Bootstrap and morris.js to render 
 Credits
 --------------
 
-Uses the nice PHP Pivotal Tracker API wrapper by Joel Dare:
+Uses a fork of the nice PHP Pivotal Tracker API wrapper by Joel Dare:
 [PHP Pivotal Tracker API wrapper](http://www.joeldare.com/wiki/php_pivotal_tracker_class)
+[Fork](https://github.com/dreamoftrees/PHP-Pivotal-Tracker-Class)
 
 LICENSE
 Copyright (c) 2011 Joel Dare
