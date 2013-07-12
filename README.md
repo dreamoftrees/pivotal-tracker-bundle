@@ -27,7 +27,7 @@ Make sure you register the bundle in the app/AppKernal.php of your Symfony 2 pro
 You will also need to register the PHP Pivotal Tracker class in app/autoload.php, I know there must be a nicer way to register this class..
 
 
-        require_once __DIR__.'/../vendor/Dreamoftrees/PivotalTrackerBundle/Lib/PivotalTracker/pivotal.php';
+        require_once __DIR__.'/../vendor/dreamoftrees/pivotal-tracker-bundle/Dreamoftrees/PivotalTrackerBundle/Lib/PivotalTracker/pivotal.php';
 
 
 
