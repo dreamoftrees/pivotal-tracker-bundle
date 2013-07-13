@@ -1,5 +1,5 @@
 {
-    "name": "dreamoftrees/pivotaltrackerbundle",
+    "name": "dreamoftrees/pivotal-tracker-bundle",
     "description": "A dashboard for the pivotal tracker API.",
     "keywords": ["admin"],
     "type": "symfony-bundle",
